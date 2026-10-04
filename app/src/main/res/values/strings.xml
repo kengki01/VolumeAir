@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Konversi Air</string>
+    <string name="title_konversi">Konversi Volume Air ke Massa Air</string>
+    <string name="label_dari">Dari :</string>
+    <string name="label_ke">Ke :</string>
+    <string name="unit_volume">Volume ( mililiter )</string>
+    <string name="unit_massa">Massa ( gram )</string>
+    <string name="btn_hitung">Hitung</string>
+</resources>

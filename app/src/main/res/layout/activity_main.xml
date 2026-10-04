@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_konversi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_label_dari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_dari"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rb_from_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/unit_volume" />
+
+            <RadioButton
+                android:id="@+id/rb_from_massa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_massa" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_input_value"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="100"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:layout_marginBottom="24dp" />
+        <TextView
+            android:id="@+id/tv_label_ke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_ke"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rb_to_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_volume" />
+
+            <RadioButton
+                android:id="@+id/rb_to_massa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/unit_massa" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_output_value"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:clickable="false"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+        <Button
+            android:id="@+id/btn_hitung"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_hitung" />
+
+    </LinearLayout>
+</ScrollView>
